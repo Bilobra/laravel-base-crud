@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('homepage');
+
+// rotta che genera i 7 metodi  crud legati al controller 
+Route::resource('comics', 'ComicController');
