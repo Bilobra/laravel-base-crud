@@ -9,7 +9,9 @@
                         <div>
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         </div>
-                        <h3>Title: {{$comic['title']}}</h3>
+                        <a href="{{route('comics.show', ['comic' => $comic->id])}}">
+                            <h3>Title: {{$comic['title']}}</h3>
+                        </a>
                         <p>{{$comic['description']}}</p>
                         <div>
                             <p>Price: {{$comic['price']}} euro</p>
