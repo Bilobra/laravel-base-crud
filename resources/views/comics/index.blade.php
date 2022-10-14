@@ -2,6 +2,9 @@
 @section('metaTitle','Comics')
 @section('content')
     <section>
+        <div class="button">
+            <a href="{{route('comics.create')}}">Add Comic!</a>
+        </div>
         <div class="container">
             <div class="wrapper">
                 @foreach ($comics as $comic)
