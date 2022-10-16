@@ -1,0 +1,35 @@
+header {
+    padding: 60px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .nav {
+        ul {
+            display: flex;
+            gap: 1rem;
+
+
+            .nav-link {
+                text-transform: uppercase;
+                font-size: 18px;
+
+
+
+                a.active,
+                a:hover {
+                    color: #0282F9;
+                    border-bottom: 1px solid #0282F9;
+                    cursor: pointer;
+
+                }
+
+
+            }
+        }
+    }
+}
