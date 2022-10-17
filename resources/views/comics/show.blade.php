@@ -20,5 +20,8 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <a  class="button" href="{{route('comics.edit', $comic)}}">Edit!</a>
+        </div>
     </section>
 @endsection
