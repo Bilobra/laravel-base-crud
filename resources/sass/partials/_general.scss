@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 ul,ol,menu{
@@ -24,4 +25,9 @@ img{
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 0.5rem;
+}
+
+.welcome_section{
+    padding: 50px 10px;
+    text-align: center;
 }

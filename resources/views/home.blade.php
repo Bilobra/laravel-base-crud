@@ -3,9 +3,11 @@
 
 @section('content')
     <div class="container">
-        <h1>
-            Benvenuti sul nostro sito di Comics!
-        </h1>
+        <div class="welcome_section">
+            <h1>
+                Benvenuti sul nostro sito di Comics!
+            </h1>
+        </div>
     </div>
 @endsection
     
