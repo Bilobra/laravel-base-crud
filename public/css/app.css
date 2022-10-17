@@ -38,6 +38,28 @@ main {
   background-color: rgb(84, 83, 83);
 }
 
+.button {
+  width: 150px;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: rgba(63, 88, 170, 0.626);
+  border: 1px solid rgba(255, 255, 255, 0.526);
+  color: white;
+  text-align: center;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: rgb(60, 91, 162);
+}
+
+.button_flex {
+  display: flex;
+  padding: 50px 0;
+  gap: 30px;
+}
+
 header {
   padding: 20px 0;
   background-color: #babbbc;
@@ -64,28 +86,6 @@ header {
   color: #0282F9;
   border-bottom: 1px solid #0282F9;
   cursor: pointer;
-}
-
-.button {
-  width: 150px;
-  font-size: 18px;
-  padding: 15px;
-  border-radius: 40px;
-  background-color: rgba(63, 88, 170, 0.626);
-  border: 1px solid rgba(255, 255, 255, 0.526);
-  color: white;
-  text-align: center;
-}
-
-.button:hover {
-  transform: scale(1.1);
-  background-color: rgb(60, 91, 162);
-}
-
-.button_flex {
-  display: flex;
-  padding: 50px 0;
-  gap: 30px;
 }
 
 .info_wrapper {
@@ -144,5 +144,49 @@ header {
 
 .wrapper .card:hover .title {
   color: white;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
+  /* align-content: center; */
+  margin: 0 auto;
+}
+
+.form_wrapper .input_wrapper {
+  padding: 15px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.form_wrapper .input_wrapper .input_element {
+  flex-grow: 1;
+  border: none;
+  background-color: rgba(255, 236, 236, 0.526);
+}
+
+.form_wrapper .input_wrapper label {
+  flex-grow: 0;
+  width: 100px;
+  background-color: rgba(198, 194, 194, 0.797);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form_wrapper .input_wrapper * {
+  padding: 5px;
+  line-height: 30px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.title_form {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  padding-bottom: 30px;
 }
 

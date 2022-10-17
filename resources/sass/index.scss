@@ -1,24 +1,4 @@
-.button {
-    width: 150px;
-    font-size: 18px;
-    padding: 15px;
-    border-radius: 40px;
-    background-color: rgba(63, 88, 170, 0.626);
-    border: 1px solid rgba(255, 255, 255, 0.526);
-    color: white;
-    text-align: center;
-    // margin-left: auto;
-    &:hover{
-        transform: scale(1.1);
-        background-color: rgb(60, 91, 162);
-    }
-}
 
-.button_flex{
-    display: flex;
-    padding: 50px 0;
-    gap: 30px;
-}
 
 .info_wrapper {
     display: flex;
