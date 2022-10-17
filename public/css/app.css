@@ -32,8 +32,15 @@ img {
   text-align: center;
 }
 
+main {
+  padding: 50px 0;
+  min-height: 100vh;
+  background-color: rgb(84, 83, 83);
+}
+
 header {
   padding: 60px 0;
+  background-color: #babbbc;
 }
 
 .nav-wrapper {
@@ -64,10 +71,14 @@ header {
   font-size: 18px;
   padding: 15px;
   border-radius: 40px;
-  background-color: rgb(49, 107, 174);
+  background-color: rgba(63, 88, 170, 0.626);
   color: white;
   text-align: center;
   margin-left: auto;
+}
+
+.button_wrapper {
+  padding: 50px;
 }
 
 .info_wrapper {
@@ -77,20 +88,54 @@ header {
 
 .base_info {
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.base_info .title {
+  text-transform: uppercase;
+  transition: all 400ms;
+}
+
+.base_info .info_details {
+  font-weight: 600;
+}
+
+.base_info .description {
+  padding: 15px 0;
+  font-style: italic;
 }
 
 .comic_thumb {
-  min-width: 150px;
-  height: 200px;
+  display: flex;
+  width: 190px;
+  height: 290px;
+  align-items: center;
 }
 
-.description {
-  padding: 15px 0;
+.comic_thumb img {
+  min-width: 190px;
+  transition: all 400ms;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+}
+
+.wrapper .card {
+  padding: 20px;
+  border: 1px solid rgb(154, 151, 151);
+  background-color: rgba(154, 153, 153, 0.626);
+}
+
+.wrapper .card:hover img {
+  transform: scale(0.9);
+}
+
+.wrapper .card:hover .title {
+  color: white;
 }
 

@@ -1,31 +1,75 @@
-.button{
+.button {
     width: 150px;
     font-size: 18px;
     padding: 15px;
     border-radius: 40px;
-    background-color: rgb(49, 107, 174);
+    background-color: rgba(63, 88, 170, 0.626);
     color: white;
     text-align: center;
     margin-left: auto;
 }
+.button_wrapper{
+    padding: 50px;
+}
 
-.info_wrapper{
+.info_wrapper {
     display: flex;
     gap: 40px;
 }
-.base_info{
+
+.base_info {
     // max-width: 300px;
     font-size: 16px;
-}
-.comic_thumb{
-    min-width: 150px;
-    height: 200px;
-}
-.description{
-    padding: 15px 0;
-}
-.wrapper{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+
+    .title {
+        text-transform: uppercase;
+        transition: all 400ms;
+    }
+
+    .info_details {
+        font-weight: 600;
+    }
+
+    .description {
+        padding: 15px 0;
+        font-style: italic;
+    }
+
+}
+
+.comic_thumb {
+
+    display: flex;
+    width: 190px;
+    height: 290px;
+    align-items: center;
+
+
+    img {
+        min-width: 190px;
+        transition: all 400ms;
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .card {
+        padding: 20px;
+        border: 1px solid rgb(154, 151, 151);
+        background-color: rgba(154, 153, 153, 0.626);;
+
+        &:hover img {
+            transform: scale(0.9);
+        }
+        &:hover .title{
+            color: white;
+        }
+    }
 }
