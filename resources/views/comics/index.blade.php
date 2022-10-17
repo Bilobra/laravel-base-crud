@@ -3,7 +3,7 @@
 @section('content')
     <section class="index_section">
         <div class="container">
-            <div class="button_wrapper">
+            <div class="button_flex">
                 <div class="button">
                     <a href="{{route('comics.create')}}">Add Comic!</a>
                 </div>
